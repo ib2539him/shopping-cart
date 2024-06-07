@@ -1,0 +1,99 @@
+/*----------------------
+ Google font
+ ---------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: 0;
+  outline: none;
+  list-style-type: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+img{
+  max-width: 100%;
+}
+
+/* shopping cart design start here */
+.header {
+  box-shadow:  0  0.5rem 1rem rgba(0, 0, 0, 0.2);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+
+  z-index: 1000;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 5%;
+}
+
+.shoppingLogo{
+  font-size: 2.5rem;
+  color: #222;
+  text-decoration: none;
+}
+
+.shopping-cart{
+  position: relative;
+
+
+}
+.fa-shopping-cart{
+  font-size: 2rem;
+}
+.cartAmount {
+    position: absolute;
+    top: -24px;
+    right: 0;
+    font-size: 2rem;
+}
+
+/* shop---------------------- */
+#shop{
+margin-top: 15rem;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+gap: 1.5rem;
+}
+.shopItem{
+  border: 1px solid #ddd;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.shopItem > img{
+  height: 280px;
+  object-fit: contain;
+  border-bottom: 1px solid #ddd;
+}
+.shopItem .shopTitle{
+  margin: 1rem 0;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.shopDescription{
+  font-size: 1.4rem;
+}
+
+
